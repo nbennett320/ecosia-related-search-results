@@ -1,9 +1,9 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "name": "Ecosia Calculator",
-  "short_name": "Ecosia Calc",
-  "description": "An environmentally friendly calculator.",
+  "name": "Ecosia Addon in React",
+  "short_name": "E.A.R.",
+  "description": "A tool that makes planting trees even easier.",
   "content_scripts": [
     {
       "matches": [
@@ -15,6 +15,12 @@
       ]
     }
   ],
+  "background": {
+    "scripts": [
+      "lib/js/browser-polyfill.js",
+      "background.js"
+    ]
+  },
   "permissions": [
     "*://*.ecosia.org/*",
     "storage",
