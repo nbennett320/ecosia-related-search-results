@@ -16,7 +16,7 @@ export default class Main extends Component {
 
 const ExampleComponent = props => (
     <div style={styles.example.container}>
-        <i> ecosia-widget-react says: </i>
+        <i> Ecosia Addon in React says: </i>
         <p style={styles.example.content}> {props.query} </p>
     </div>
 )

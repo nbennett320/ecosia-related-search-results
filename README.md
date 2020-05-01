@@ -1,4 +1,4 @@
-![a picture of my example plugin](./screenshots/2.png)
+![a picture of my example plugin](./screenshots/3.png)
 ## Ecosia Addon in React (E.A.R.)
 **A tool that makes planting trees even easier**
 
