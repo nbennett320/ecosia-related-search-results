@@ -1,20 +1,26 @@
 import React, { Component } from 'react'
 import Panel from './Panel'
+import scrape from './scripts/scrape'
 
 export default class PanelContainer extends Component {
+  getDetails = el => {
+    const { text, href } = el
+    scrape.from(href)
+  }
+
   render() {
-    const { content } = this.props
+    const { content, query } = this.props
     console.log(content)
     return (
       <div style={styles.main}>
-        <span style={styles.header}> Related search results: </span>
+        <span style={styles.header} className="cart-title"> Searches related to {query} </span>
         <div style={styles.content}>
           {content.map((el, i) => (
             <Panel 
               key={`${i}`}
               title={el.text}
               link={el.href}
-              details={"place holder"}
+              details={"placeholder"}
             />
           ))}
         </div>
@@ -33,9 +39,9 @@ const styles = {
   header: {
     padding: '10px 26px',
     margin: '0',
-    fontSize: '18px',
-    color: '#4a4a4a',
-    cursor: 'text'
+    cursor: 'text',
+    color: '#9b9b9b',
+    fontSize: '13px',
   },
 
   content: {

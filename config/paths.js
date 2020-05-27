@@ -70,7 +70,7 @@ module.exports = {
   appBuild: resolveApp('build'),
   appExtension: resolveApp('extension'),
   appDev: resolveApp('dev'),
-  appBackgroundJs: resolveModule(resolveApp, 'src/background_scripts/index'),
+  appBackgroundJs: resolveModule(resolveApp, 'src/background/index'),
   appContentJs: resolveModule(resolveApp, 'src/content_scripts/index'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),

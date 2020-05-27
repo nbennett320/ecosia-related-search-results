@@ -9,3 +9,7 @@
 // 
 // if you dont need this... just delete this file and read my docs
 console.log("Loaded Ecosia Addon in React (E.A.R.) background script.")
+
+browser.runtime.onMessage.addListener(message => {
+  console.log(message) 
+})

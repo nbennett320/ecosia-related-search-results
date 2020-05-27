@@ -19,5 +19,8 @@ const related = Array.from(children).map(el => {
 })
 
 if(related.length > 0) {
-  ReactDOM.render(<Main related={related} />, content[0])
+  ReactDOM.render(<Main 
+    related={related} 
+    query={query} 
+  />, content[0])
 }
